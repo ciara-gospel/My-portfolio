@@ -51,7 +51,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-pretty"
         >
-          I am a developer passionate on web development, Design, and also making ideas real to solve a specific problem. I love Tech, Programing, and Learning new things. During my training i discover many things that i had never do before and it's was not easy for me. You know coming from an educational background that was not related in tech and suddenly finding myself in this field has been a journey of growth and discovery and also with much failures.I did litterature in school after my GCE Advanced level i found myself in tech and it has been a great story for me.
+          Hello, I am <span className="text-accent font-semibold">Ologuie Arlette</span> a developer passionate on web development, Design, and also making ideas real to solve a specific problem. I love Tech, Programing, and Learning new things. During my training i discover many things that i had never do before and it's was not easy for me. You know coming from an educational background that was not related in tech and suddenly finding myself in this field has been a journey of growth and discovery and also with much failures.I did litterature in school after my GCE Advanced level i found myself in tech and it has been a great story for me.
         </motion.p>
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center">
           <motion.a
