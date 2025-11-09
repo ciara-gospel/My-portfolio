@@ -9,20 +9,20 @@ export default function Experience() {
   const experiences = [
     {
       role: "Frontend Developer",
-      period: "2024 - Présent",
-      description: "Développement d'interfaces complexes et optimisation des performances.",
-      highlights: ["React", "TypeScript", "Performance"],
+      period: "2024 - 2025",
+      description: "Development of complex interfaces and performance optimization.",
+      highlights: ["React", "TypeScript", "Performance", "HTML", "CSS"],
     },
     {
       role: "Full Stack Developer",
       period: "2024 - 2025",
-      description: "Création de solutions web complètes du frontend au backend.",
-      highlights: ["Next.js", "Node.js", "Databases"],
+      description: "Building complete web solutions from frontend to backend.",
+      highlights: ["Next.js", "Node.js", "Databases", "Nest.js", "JavaScript", "TypeScript"],
     },
     {
       role: "Junior Developer",
       period: "2024 - 2025",
-      description: "Apprentissage et contribution à des projets innovants.",
+      description: "Learning and contributing to innovative projects.",
       highlights: ["JavaScript", "React", "Problem Solving"],
     },
   ]
@@ -36,7 +36,7 @@ export default function Experience() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Expérience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Experience</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary rounded-full" />
         </motion.div>
 

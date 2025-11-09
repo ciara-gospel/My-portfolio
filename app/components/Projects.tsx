@@ -10,10 +10,9 @@ export default function Projects() {
   const projects = [
     {
       title: "Image Browser and Downloader",
-      description: "An image management platform with search and download features.",
+      description: "An image browsing platform with search and download features.",
       tags: ["React", "HTML", "CSS", "JavaScript", "API", "UI Design", "Animation"],
       image: "/ImageBrowser.png",
-      // ✅ Add your deployed project and GitHub repo here
       links: { 
         live: "https://snapshop-eta.vercel.app/", 
         github: "https://github.com/ciara-gospel/snapshop/tree/main"
@@ -21,7 +20,7 @@ export default function Projects() {
     },
     {
       title: "File Upload Service",
-      description: "A file upload service with file management capabilities.",
+      description: "A service where you can upload your files and store it online.",
       tags: ["TypeScript", "AWS", "React", "Node.js"],
       image: "/FileUpload.png",
       links: { 

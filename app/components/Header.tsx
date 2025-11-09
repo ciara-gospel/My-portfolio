@@ -25,12 +25,13 @@ export default function Header({ isScrolled }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
+          <motion.a
+          href="#"
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
           >
             OLOGUIE Arlette
-          </motion.div>
+          </motion.a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
