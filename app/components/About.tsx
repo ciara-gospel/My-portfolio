@@ -43,7 +43,7 @@ export default function About() {
               build innovative solutions.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              With several years of experience in the field, I strive to turn challenges into opportunities
+              With one year of experience in the field, I strive to turn challenges into opportunities
               for innovation.
             </p>
 

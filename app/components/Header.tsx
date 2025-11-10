@@ -11,7 +11,15 @@ interface HeaderProps {
 
 export default function Header({ isScrolled }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const navItems = ["About", "Projects", "Experience", "Contact"]
+  const navItems = ["About", "Projects", "Experience", "Certificates", "Contact"]
+
+  // 🔹 Fonction pour scroller jusqu'à la section contact
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <motion.header
@@ -26,7 +34,7 @@ export default function Header({ isScrolled }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.a
-          href="#"
+            href="#"
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
           >
@@ -43,7 +51,7 @@ export default function Header({ isScrolled }: HeaderProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ color: "var(--accent)" }}
-                className="text-sm font-medium hover:text-accent transition-colors cursor-pointer"
+                className="text-sm text-text-color font-medium hover:text-accent transition-colors cursor-pointer dark:text-white"
               >
                 {item}
               </motion.a>
@@ -51,10 +59,11 @@ export default function Header({ isScrolled }: HeaderProps) {
             <ThemeToggle />
           </nav>
 
-          {/* Desktop CTA Button */}
+          {/* ✅ Desktop CTA Button (scroll to contact) */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={scrollToContact}
             className="bg-accent text-accent-foreground px-6 py-2 rounded-lg font-medium text-sm hover:shadow-lg transition-shadow hidden md:block"
           >
             Get in touch
@@ -84,6 +93,19 @@ export default function Header({ isScrolled }: HeaderProps) {
               {item}
             </motion.a>
           ))}
+
+          {/* ✅ Mobile “Get in Touch” button */}
+          <motion.button
+            onClick={() => {
+              scrollToContact()
+              setIsOpen(false)
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full bg-accent text-accent-foreground px-4 py-2 rounded-lg font-medium text-sm hover:shadow-lg transition-shadow mt-2"
+          >
+            Get in touch
+          </motion.button>
         </motion.nav>
       </div>
     </motion.header>
