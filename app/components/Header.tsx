@@ -51,7 +51,7 @@ export default function Header({ isScrolled }: HeaderProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ color: "var(--accent)" }}
-                className="text-sm text-text-color font-medium hover:text-accent transition-colors cursor-pointer dark:text-white"
+                className="text-sm font-medium hover:text-accent transition-colors cursor-pointer dark:text-white"
               >
                 {item}
               </motion.a>
