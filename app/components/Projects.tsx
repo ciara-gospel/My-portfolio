@@ -87,7 +87,6 @@ export default function Projects() {
               whileHover={{ y: -10 }}
               className="group overflow-hidden rounded-xl border border-border bg-card hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/10"
             >
-              {/* Image */}
               <div className="relative overflow-hidden h-48 bg-muted">
                 <motion.img
                   src={project.image}
@@ -99,12 +98,10 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">{project.title}</h3>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
                     <span

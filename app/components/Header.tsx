@@ -13,7 +13,6 @@ export default function Header({ isScrolled }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false)
   const navItems = ["About", "Projects", "Experience", "Certificates", "Contact"]
 
-  // 🔹 Fonction pour scroller jusqu'à la section contact
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact")
     if (contactSection) {
@@ -32,7 +31,6 @@ export default function Header({ isScrolled }: HeaderProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <motion.a
             href="#"
             whileHover={{ scale: 1.05 }}
@@ -41,7 +39,6 @@ export default function Header({ isScrolled }: HeaderProps) {
             OLOGUIE Arlette
           </motion.a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item, index) => (
               <motion.a
@@ -59,7 +56,6 @@ export default function Header({ isScrolled }: HeaderProps) {
             <ThemeToggle />
           </nav>
 
-          {/* ✅ Desktop CTA Button (scroll to contact) */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -69,13 +65,11 @@ export default function Header({ isScrolled }: HeaderProps) {
             Get in touch
           </motion.button>
 
-          {/* Mobile Menu Toggle Button */}
           <motion.button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2" whileTap={{ scale: 0.95 }}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </motion.button>
         </div>
 
-        {/* Mobile Menu */}
         <motion.nav
           initial={{ opacity: 0, height: 0 }}
           animate={isOpen ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }}
@@ -94,7 +88,6 @@ export default function Header({ isScrolled }: HeaderProps) {
             </motion.a>
           ))}
 
-          {/* ✅ Mobile “Get in Touch” button */}
           <motion.button
             onClick={() => {
               scrollToContact()

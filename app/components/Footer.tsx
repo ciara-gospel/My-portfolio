@@ -29,7 +29,6 @@ export default function Footer() {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto px-6 py-12 text-center"
       >
-        {/* Logo / Title */}
         <h3 className="text-3xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-3">
           Portfolio
         </h3>
@@ -37,7 +36,6 @@ export default function Footer() {
           Passionate digital creator focused on innovation and user experience.
         </p>
 
-        {/* Navigation links */}
         <div className="flex flex-wrap justify-center gap-6 mb-8">
           {navLinks.map((link) => (
             <motion.a
@@ -51,7 +49,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Social Icons */}
         <div className="flex justify-center gap-5 mb-8">
           {socials.map(({ icon: Icon, href, label }) => (
             <motion.a
@@ -69,7 +66,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Copyright */}
         <div className="border-t border-border pt-6">
           <p className="text-muted-foreground text-sm">
             © {currentYear} <span className="text-accent font-medium">Portfolio</span>. All rights reserved.
