@@ -41,10 +41,8 @@ export default function Experience() {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent via-primary to-accent transform md:-translate-x-1/2" />
 
-          {/* Experience items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <motion.div
@@ -54,13 +52,11 @@ export default function Experience() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className={`relative md:grid md:grid-cols-2 gap-8 ${index % 2 === 1 ? "md:direction-rtl" : ""}`}
               >
-                {/* Timeline dot */}
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   className="absolute left-0 md:left-1/2 top-0 w-4 h-4 bg-accent border-4 border-background rounded-full transform md:-translate-x-1/2 -translate-x-1.5 z-10"
                 />
 
-                {/* Content */}
                 <motion.div
                   whileHover={{ x: index % 2 === 0 ? 10 : -10 }}
                   className={`pt-2 pl-8 md:pl-0 ${index % 2 === 1 ? "md:text-right" : ""}`}

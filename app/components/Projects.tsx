@@ -19,23 +19,23 @@ export default function Projects() {
       },
     },
     {
-      title: "File Upload Service",
+      title: "Food Recipes",
       description: "A service where you can upload your files and store it online.",
       tags: ["TypeScript", "AWS", "React", "Node.js"],
-      image: "/FileUpload.png",
+      image: "/food-recipe.png",
       links: { 
-        live: "https://your-fileupload-app.netlify.app", 
-        github: "https://github.com/ciara-gospel/file-storage-frontend"
+        live: "https://food-recipe-app-two-lyart.vercel.app/", 
+        github: "https://github.com/ciara-gospel/food-recipe-app"
       },
     },
     {
-      title: "MovieApp Design",
+      title: "MovieApp Explorer",
       description: "A mobile app for managing movies and exploring content.",
       tags: ["UI Design", "Animation", "JavaScript"],
-      image: "/MovieDb.png",
+      image: "/streamX.png",
       links: { 
-        live: "https://movie-db-js-git-development-arletteologuies-projects.vercel.app/", 
-        github: "https://github.com/ciara-gospel/movie-db-js"
+        live: "https://movies-explorer-umber.vercel.app/", 
+        github: "https://github.com/ciara-gospel/movies-explorer"
       },
     },
   ]
